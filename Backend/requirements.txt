@@ -1,0 +1,4 @@
+flask
+rasterio
+pillow
+numpy

@@ -1,0 +1,117 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Light gray background */
+    color: #333; /* Dark gray text for readability */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .app-container {
+    background-color: #ffffff; /* White background for the card */
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #3b9c9c; /* Soft teal for the title */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+    color: #3b9c9c;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  input[type="file"] {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 16px;
+    color: #555;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3b9c9c; /* Soft teal button */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+    width: auto;
+  }
+  
+  button:disabled {
+    background-color: #a8d8d8; /* Light teal when disabled */
+    cursor: not-allowed;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #318d8d; /* Darker teal on hover */
+    transform: scale(1.05); /* Button hover effect */
+  }
+  
+  .result-container {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .output-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .app-container {
+      padding: 15px;
+      max-width: 90%;
+    }
+  
+    h1 {
+      font-size: 1.75rem;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .app-container {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  
+    input[type="file"] {
+      font-size: 14px;
+    }
+  }
+  
